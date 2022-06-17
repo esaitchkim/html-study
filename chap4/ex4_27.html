@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 4.27 표 스타일 지정(4)</title>
+    <style>
+        table {
+            table-layout: fixed;
+            width: 80%;
+            height: 200px;
+            border-collapse: collapse;
+            border-top: 5px solid blue;
+            border-bottom: 5px solid blue;
+            background: skyblue;
+            border-left: skyblue;
+            border-right: skyblue;
+        }
+
+        th {
+            border-bottom: 3px solid blue;
+        }
+
+        td {
+            text-align: center;
+            border: 1px dotted red;
+        }
+
+        .c0 {
+            border-left: skyblue;
+        }
+
+        .c4 {
+            border-right: skyblue;
+        }
+
+        tr:first-child {
+            background: lightgray;
+        }
+
+        tr:hover {
+            background: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <caption> 수업시간표(기본 출력)</caption>
+        <tr>
+            <th>시간/요일</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td rowspan="3">CSS</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td rowspan="2">HTML5</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td></td>
+            <td colspan="2">JavaScript</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
